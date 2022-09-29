@@ -1,0 +1,46 @@
+* {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      
+      .chartMenu {
+        width: 100vw;
+        height: 40px;
+        background: #1A1A1A;
+        color: rgb(68, 26, 255);
+      }
+     
+      .chartCard {
+        width: 100vw;
+        height: calc(100vh - 40px);
+        background: rgba(25, 63, 190, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .chartBox {
+        width: 700px;
+        padding-top: 0%;
+        margin-top: 0%;
+        padding: 20px;
+        border-radius: 20px;
+        border: solid 3px rgb(0, 174, 197);
+        background: white;
+      }
+
+      .curmenu{
+        padding: 0%;
+      }
+      
+      .yearlist{
+        padding-left: 85%;
+        padding-top: 0%;
+        bottom: 492px;
+        right: 350px;
+      }
+    
+
+    
+
+

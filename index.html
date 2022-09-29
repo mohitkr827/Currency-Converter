@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Dashboard</title>
+  </head>
+  <body onload="setup()">
+    <div class="chartCard">
+      <div class="chartBox row">
+
+        
+        <div class="curmenu col-5 ">
+          <h7> USD vs</h7>
+          <select id="curlist" onchange="setup()" />
+          <option value="INR">Indian Ruppee</option>    
+<option value="GBP">British Pound</option>  
+<option value="AUD">Australian Dollar</option>  
+<option value="CAD">Canadian Dollar</option>
+<option value="DZD">Algerian Dinar</option>
+<option value="BWP">Botswanan Pula</option>
+<option value="BRL">Brazilian Real</option>
+<option value="BND">Brunei Dollar</option>
+<option value="CLP">Chilean Peso</option>
+<option value="CNY">Chinese Yuan</option>
+<option value="CZY">Czech Koruny</option>
+<option value="DKK">Danish Krone</option>
+<option value="EUR">Euro</option>
+<option value="ILS">Israeli New Sheqel</option>
+<option value="JPY">Japanese Yen</option>
+<option value="KRW">South Korean Won</option>
+<option value="KWD">Kuwaiti Dinar</option>
+<option value="MYR">Malaysian Ringgit</option>
+<option value="MUR">Mauritian Rupee</option>
+<option value="MXN">Mexican Peso</option>
+<option value="NZD">New Zealand Dollar</option>
+<option value="NOK">Norwegian Krone</option>
+<option value="OMR">Omani Rial</option>
+<option value="PEN">Peruvian Nuevo Sol</option>
+<option value="PHP">Philippine Peso</option>
+<option value="PLN">Polish Zloty</option>
+<option value="QAR">Qatari Rial</option>
+<option value="RUB">Russian Ruble</option>
+<option value="SAR">Saudi Riyal</option>
+<option value="SGD">Singapore Dollar</option>
+<option value="ZAR">South African Rand</option>
+<option value="SEK">Swedish Krona</option>
+<option value="CHF">Swiss Franc</option>
+<option value="THB">Thai Baht</option>
+<option value="TTD">Trinidad and Tobago Dollar</option>
+<option value="AED">United Arab Emirates Dirham</option>
+<option value="USD">United States Dollar</option>
+<option value="UYU">Uruguayan Peso</option>
+<option value="COP">Colombian Peso</option>
+<option value="BHD">Bahraini Dinar</option>
+<option value="VEF">Venezuelan Bolivar (VEB)</option>
+<option value="HUF">Hungarian Forint</option>
+<option value="ISK">Icelandic Króna</option>
+<option value="IDR">Indonesian Rupiah </option>
+<option value="IRR">Iranian Rial</option>
+<option value="KZT">Kazakhstani Tenge</option>
+<option value="LYD">Libyan Dinar</option>
+<option value="NPR">Nepalese Rupee</option>
+<option value="PKR">Pakistani Rupee</option>
+<option value="TND">Tunisian Dinar</option>
+
+
+        </select>
+        </div>
+        
+        <div class="yearlist col-md-2 offset-5">
+          <select id="Year" onchange="setup()">
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+          </select>
+        </div>
+
+        
+
+        <canvas id="myChart"></canvas>
+        
+        <div class="view col-1 offset-10">
+          <select id="period" onchange="setup()">
+            <option value="M">Monthly</option>
+            <option value="W">Weekly</option>
+            <option value="Q">Quarterly</option>
+            <option value="Y">Yearly</option>
+        </div>
+      </div>
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="resources/jsFuncs.js"></script>
+  </body>
+</html>
